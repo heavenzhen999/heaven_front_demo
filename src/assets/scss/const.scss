@@ -1,0 +1,28 @@
+/*
+ * @Author: chen zhen
+ * @Date: 2018-06-07 18:01:22
+ * @Last Modified by: chen zhen
+ * @Last Modified time: 2018-06-29 10:31:17
+ * @Description: scss 通用变量，必须对所有的变量进行详细的描述
+ */
+
+$headerHeight: 80px;
+$footerheight: 28px;
+
+$successColor: #67c23a;
+$warningColor: #e6a23c;
+$dangerColor: #f56c6c;
+$infoColor: #909399;
+
+
+$backgroundColor: #000;
+$moduleBackgroundColor: linear-gradient(to bottom, #121f36, #070e18);
+$fontSize: 14px;
+$fontColor: #eee;
+$fontColorLow: #ddd;
+
+$titleHeight: 84px; // title部分的高度
+
+$interval: 10px; // 中间的间隔距离
+
+$rightWidth: 500px; // 最右侧的menu模块的大小

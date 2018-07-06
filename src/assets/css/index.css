@@ -1,0 +1,21 @@
+/*
+ * @Author: chen zhen
+ * @Date: 2018-06-07 10:38:57
+ * @Last Modified by: chen zhen
+ * @Last Modified time: 2018-06-28 17:34:36
+ * @Description: 主题样式文件
+ */
+
+/* body的具体样式在App内部 */
+body {
+  font-size: 14px;
+  font-family: 'Microsoft YaHei', 'Avenir', Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  /* text-align: center; */
+  color: #2c3e50;
+}
+
+.clear{
+  clear: left;
+}
