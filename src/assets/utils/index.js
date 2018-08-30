@@ -2,7 +2,7 @@
  * @Author: chen zhen
  * @Date: 2018-06-26 14:01:18
  * @Last Modified by: chen zhen
- * @Last Modified time: 2018-06-26 16:04:45
+ * @Last Modified time: 2018-08-30 09:22:02
  * @Description: 一些 工具方法
  */
 
@@ -112,4 +112,37 @@ export const judgeSystem = () => {
 
 export const judgeType = obj => {
   return Object.prototype.toString.call(obj).match(/^\[object\s(.*)\]$/)[1]
+}
+
+/**
+ * 从UTC时间字符串转换为本地时间
+ * @param {*} UTCStr UTC时间字符串
+ */
+export const getLocalDateByUTC = UTCStr => {
+  try {
+    if (_.isNull(UTCStr) || _.isUndefined(UTCStr)) return UTCStr
+    let u = new Date(UTCStr.substr(0, 23).replace('T', ' '))
+    let localMilliSecond = Date.UTC(u.getFullYear(), u.getMonth(), u.getDate(), u.getHours(), u.getMinutes(), u.getSeconds(), u.getMilliseconds())
+    return new Date(localMilliSecond)
+  } catch (e) {
+    console.error('错误的时间转换')
+    console.error(UTCStr)
+    return new Date()
+  }
+}
+
+/**
+ * 解析location.search
+ * @param {String} search location.search字符串
+ */
+export const getMapBySearch = search => {
+  let m = new Map()
+  if (search.length === 0) return m
+  let s = search.substring(1)
+  let a = s.split('&')
+  for (let i of a) {
+    let o = i.split('=')
+    m.set(o[0], o[1])
+  }
+  return m
 }
