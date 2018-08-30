@@ -2,7 +2,7 @@
  * @Author: chen zhen
  * @Date: 2018-06-26 14:01:18
  * @Last Modified by: chen zhen
- * @Last Modified time: 2018-08-30 09:22:02
+ * @Last Modified time: 2018-08-30 14:47:56
  * @Description: 一些 工具方法
  */
 
@@ -145,4 +145,13 @@ export const getMapBySearch = search => {
     m.set(o[0], o[1])
   }
   return m
+}
+
+/**
+ * 从数组内随机进行选择
+ * @param {Array} arr
+ */
+export const randomOne = arr => {
+  if (arr.length === 0) return null
+  return arr[Math.floor(Math.random() * arr.length)]
 }
