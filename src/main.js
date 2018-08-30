@@ -8,6 +8,8 @@ import App from './App'
 import store from './store'
 import router from './router'
 
+import _ from 'lodash'
+
 import 'normalize.css'
 import 'element-ui/lib/theme-chalk/index.css'
 import '@/assets/css/common.css'
@@ -24,6 +26,9 @@ require('@/mock')
 if (process.env.NODE_ENV === 'development' && process.env.MOCK === true) {
   // import '@/mock'
 }
+
+// 全局引用
+global._ = _
 
 Vue.use(ElementUI)
 Vue.use(axios)
