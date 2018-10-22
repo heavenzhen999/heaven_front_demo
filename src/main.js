@@ -8,6 +8,8 @@ import App from './App'
 import store from './store'
 import router from './router'
 
+import _ from 'lodash'
+
 import 'normalize.css'
 import 'element-ui/lib/theme-chalk/index.css'
 import '@/assets/scss/common.scss'

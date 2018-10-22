@@ -1,7 +1,6 @@
 # heaven_front_demo
-# cathaynebula_front_demo
 
-> 此项目为国泰星云PC端，初始化示例DEMO。
+> 此项目为个人前端初始化包
 
 ## Build Setup
 
@@ -80,20 +79,27 @@ index.html 主页面
 
 ## 命名规范
 
+<<<<<<< HEAD
 ### 文件命名
 
 - 文件命名(详见doc/document Naming.md)
 
+=======
+>>>>>>> 05f327bfe15f2941f75f0bd600168164b85627a5
 ### HTML
 
 - HTML 语义化(详见doc/Semantic HTML.md)
 - HTML 代码规范(详见doc/HTML Coding Notations.md)
+<<<<<<< HEAD
 - Meta 标签
 - 文件引用说明
+=======
+>>>>>>> 05f327bfe15f2941f75f0bd600168164b85627a5
 
 ### Javascript
 
 - Javascript 代码规范
+<<<<<<< HEAD
 - Javascript 示例推荐
 
 ### Css
@@ -145,3 +151,9 @@ background:none;_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(sizin
 }
 
  -->
+=======
+
+### Css
+
+命名书写规范采用BEM + 命名范围的方式进行处理。
+>>>>>>> 05f327bfe15f2941f75f0bd600168164b85627a5
