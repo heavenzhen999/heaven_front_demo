@@ -1,24 +1,19 @@
 /*
  * @Author: chen zhen
- * @Date: 2018-06-26 16:18:57
- * @Last Modified by: chen zhen
- * @Last Modified time: 2018-07-02 11:00:18
- * @Description: 系统页面主要部分
+ * @Date: 2018-06-17 11:08:55
+ * @Last Modified by:   chen zhen
+ * @Last Modified time: 2018-06-17 11:08:55
  */
+
 <template>
-  <div class="container">
-  </div>
+  <div class="g-container"></div>
 </template>
 
 <script>
-
 export default {
 }
 </script>
 
 <style lang="scss">
-.container{
-  height: 100%;
-  width: 100%;
-}
+.g-container{}
 </style>

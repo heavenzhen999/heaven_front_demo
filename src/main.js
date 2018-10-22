@@ -10,22 +10,20 @@ import router from './router'
 
 import 'normalize.css'
 import 'element-ui/lib/theme-chalk/index.css'
-import '@/assets/css/common.css'
-import '@/assets/css/index.css'
 import '@/assets/scss/common.scss'
 
-import ElementUI from 'element-ui'
 import axios from '@/assets/js/install-axios'
 import echarts from '@/assets/js/install-echarts'
+import elementUI from '@/assets/js/install-element-ui.js'
 
 // TODO 怎么能根据环境进行不引入
-require('@/mock')
+require('@/../mock')
 /* eslint-disable no-cond-assign */
 if (process.env.NODE_ENV === 'development' && process.env.MOCK === true) {
   // import '@/mock'
 }
 
-Vue.use(ElementUI)
+Vue.use(elementUI)
 Vue.use(axios)
 Vue.use(echarts)
 
