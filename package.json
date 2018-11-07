@@ -10,6 +10,11 @@
     "test:unit": "vue-cli-service test:unit"
   },
   "dependencies": {
+    "axios": "^0.18.0",
+    "echarts": "^4.2.0-rc.2",
+    "element-ui": "^2.4.9",
+    "lodash": "^4.17.11",
+    "mockjs": "^1.0.1-beta3",
     "vue": "^2.5.17",
     "vue-router": "^3.0.1",
     "vuex": "^3.0.1"

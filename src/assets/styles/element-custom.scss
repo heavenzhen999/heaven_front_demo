@@ -1,0 +1,52 @@
+// 自定义mint-ui组件样式
+.el-form .el-form-item__label,
+.el-form .el-input,
+.el-form .el-form-item__content,
+.el-tree-node__label,
+.el-select-dropdown__list .el-select-dropdown__item,
+.el-form-item__content .el-cascader,
+.el-cascader-menu .el-cascader-menu__item {
+    font-size: $base-font-size;
+}
+
+.el-form-item__content .el-button--primary {
+    font-size: $base-font-size;
+    background: $color-primary;
+    border-color: $color-primary;
+}
+
+.el-form-item__content  .el-button {
+    font-size: $base-font-size;
+    padding: 10px 20px;
+}
+
+.el-form-item__content .el-button--primary:focus, 
+.el-form-item__content .el-button--primary:hover {
+    background: $color-primary-assist;
+    border-color: $color-primary-assist;
+}
+
+.el-input__inner {
+    height: 34px;
+}
+
+.el-table tr td, .el-table tr th {
+    padding: 8px 0;
+    font-size: $base-font-size;
+}
+
+.el-pagination .el-pager{
+    font-weight: 400;
+}
+
+.el-pagination .el-pager li.active {
+    color: $color-primary; 
+}
+
+.status-blue {
+    color: $color-primary;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+@import '~element-ui/lib/theme-chalk/index.css';

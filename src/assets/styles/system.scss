@@ -1,0 +1,72 @@
+.menu-content {
+    position: relative;
+    // height: 100%;
+    min-height: 720px;
+}
+
+.paddingLeft {
+    padding-left: 225px;
+}
+
+.aside-content {
+    padding: 0px;
+    height: 100%;
+    background: #fff;
+}
+
+.permission-tree {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 220px;
+    height: 100%;
+    padding: 5px 5px 0 5px;
+    background: $body-cover;
+
+    .tree-content {
+        padding: 6px 0 0;
+    }
+}
+
+.select-tree {
+    min-height: 720px;
+    background: $body-cover;
+}
+
+.cont-title {
+    color: $text-color;
+    font-size: 16px;
+    padding-left: 10px;
+    line-height: 24px;
+    margin-bottom: 8px;
+
+    .el-icon-document {
+        font-size: 18px;
+        margin-right: 6px;
+        color: $color-primary;
+    }
+}
+
+.form-content {
+    padding-left: 30px;
+}
+
+.pagination-box {
+    text-align: right;
+    padding: 10px 10px 0 0;
+}
+
+.el-dialog {
+    .el-form {
+        width: 73%;
+    }
+
+    .el-select, .el-form-item__content {
+        width: 375px;
+    }
+
+    .el-cascader {
+        width: 100%;
+    }
+}
+

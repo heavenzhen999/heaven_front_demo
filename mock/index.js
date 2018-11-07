@@ -2,13 +2,11 @@
  * @Author: zhen chen
  * @Date: 2017-11-01 11:13:35
  * @Last Modified by: chen zhen
- * @Last Modified time: 2018-06-29 15:16:35
+ * @Last Modified time: 2018-11-07 15:32:15
  * @description mockjs主文件
  */
 
 import Mock from 'mockjs'
-import { format } from '@/assets/utils'
-import _ from 'lodash'
 
 // 登录部分
 Mock.mock('mock/system/login', 'post', (req, res) => {
@@ -66,39 +64,39 @@ Mock.mock('mock/monitor/getList', 'post', (req, res) => {
 })
 
 // 根据传入的参数获取某个详细参数
-Mock.mock('mock/monitor/getDetails', 'post', (req, res) => {
-  let begDate = new Date(req.body.get('begDate')).getTime()
-  let endDate = new Date(req.body.get('endDate')).getTime()
-  let list = []
+// Mock.mock('mock/monitor/getDetails', 'post', (req, res) => {
+//   let begDate = new Date(req.body.get('begDate')).getTime()
+//   let endDate = new Date(req.body.get('endDate')).getTime()
+//   let list = []
 
-  const DEFAULT_INTERVAL = 10000 // 默认时间间隔为3s种
-  // 转换
-  let d = begDate
+//   const DEFAULT_INTERVAL = 10000 // 默认时间间隔为3s种
+//   // 转换
+//   let d = begDate
 
-  while (d <= endDate) {
-    let maxSpeed = _.random(2000, 2500, false) / 100
-    let minSpeed = _.random(2, 600, false) / 100
-    list.push({
-      id: 0,
-      companyId: 0,
-      systemTime: format(new Date(d)),
-      maxSpeed,
-      minSpeed,
-      avgSpeed: +((maxSpeed + minSpeed) / 2).toFixed(2),
-      maxSpeedSensor: '111',
-      minSpeedSensor: '123',
-      avgSpeedSensor: '123'
-    })
-    d += DEFAULT_INTERVAL
-  }
-  return {
-    list,
-    now: {
-      maxSpeed: 15,
-      avgSpeed: 10,
-      minSpeed: 5
-    }
-  }
-})
+//   while (d <= endDate) {
+//     let maxSpeed = _.random(2000, 2500, false) / 100
+//     let minSpeed = _.random(2, 600, false) / 100
+//     list.push({
+//       id: 0,
+//       companyId: 0,
+//       systemTime: format(new Date(d)),
+//       maxSpeed,
+//       minSpeed,
+//       avgSpeed: +((maxSpeed + minSpeed) / 2).toFixed(2),
+//       maxSpeedSensor: '111',
+//       minSpeedSensor: '123',
+//       avgSpeedSensor: '123'
+//     })
+//     d += DEFAULT_INTERVAL
+//   }
+//   return {
+//     list,
+//     now: {
+//       maxSpeed: 15,
+//       avgSpeed: 10,
+//       minSpeed: 5
+//     }
+//   }
+// })
 
 export default Mock
