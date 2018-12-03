@@ -27,8 +27,8 @@ hgroup元素代表“网页”或“section”的标题，当元素有多个层�
 
 ``` html
 <hgroup>
-    <h1>这是一篇介绍HTML 5语义化标签和更简洁的结构</h1>
-    <h2>HTML 5</h2>
+  <h1>这是一篇介绍HTML 5语义化标签和更简洁的结构</h1>
+  <h2>HTML 5</h2>
 </hgroup>
 ```
 hgroup使用注意：
@@ -42,11 +42,11 @@ nav元素代表页面的导航链接区域。用于定义页面的主要导航�
 
 ``` html
 <nav>
-    <ul>
-        <li>HTML 5</li>
-        <li>CSS3</li>
-        <li>JavaScript</li>
-    </ul>
+  <ul>
+    <li>HTML 5</li>
+    <li>CSS3</li>
+    <li>JavaScript</li>
+  </ul>
 </nav>
 ```
 在有些时候却情不自禁的想用它，譬如：侧边栏上目录，面包屑导航，搜索样式，或者下一篇上一篇文章，但是事实上规范上说nav只能用在页面主要导航部分上。页脚区域中的链接列表，虽然指向不同网站的不同区域，譬如服务条款，版权页等，这些footer元素就能够用了。
@@ -63,11 +63,11 @@ aside元素被包含在article元素中作为主要内容的附属信息部分�
 
 ``` html
 <article>
-    <p>内容</p>
-    <aside>
-        <h1>简介</h1>
-        <p>Heaven</p>
-    </aside>
+  <p>内容</p>
+  <aside>
+    <h1>简介</h1>
+    <p>Heaven</p>
+  </aside>
 </article>
 ```
 
@@ -85,11 +85,11 @@ article元素最容易跟section和div容易混淆，其实article代表一个�
 
 ``` html
 <article>
-    <h1>一篇文章</h1>
-    <p>文章内容..</p>
-    <footer>
-        <p><small>Heaven</small></p>
-    </footer>
+  <h1>一篇文章</h1>
+  <p>文章内容..</p>
+  <footer>
+    <p><small>Heaven</small></p>
+  </footer>
 </article>
 ```
 
